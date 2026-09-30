@@ -1597,7 +1597,7 @@ img {
     /* تنزيل المحتوى لتحت شوية */
     .hero-content {
         position: relative;
-        top: 30px;
+        top: 100px;
     }
 
     .hero-badges {
