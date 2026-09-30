@@ -7,6 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #DAD5D2;
+
 }
 
 .search-wrapper {
@@ -1329,9 +1330,39 @@ h5.section-title {
    RESPONSIVE - ضيف الكود ده في آخر Style.css
 ===================================================== */
 
-/* يمنع السكرول الأفقي (بسبب أنيميشن AOS) */
+/* =====================================================
+   FIX: منع السكرول الأفقي على الموبايل
+   الأسباب: أنيميشن AOS (fade-right / fade-left) + الـ row بـ g-5 جوه container
+   + الـ offcanvas بره الشاشة. الحل: نقفل الـ overflow-x على html و body
+   (الاتنين مع بعض عشان الموبايل) ونقص أي حاجة طالعة برا الأقسام.
+===================================================== */
+html,
 body {
+    max-width: 100%;
     overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+/* clip بدل hidden عشان ميبوظش الـ sticky */
+section,
+footer {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+/* الـ offcanvas ميعديش عرض الشاشة */
+.offcanvas {
+    max-width: 100vw;
+}
+
+/* الـ row بـ g-5 كان بيطلع برا الـ container على الموبايل */
+@media (max-width: 991.98px) {
+    .row.g-5 {
+        --bs-gutter-x: 1.5rem;
+    }
 }
 
 img {
