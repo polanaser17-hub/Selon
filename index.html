@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S E L O N</title>
+    <link rel="icon" href="Images/Selon-logo.webp" type="image/jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div id="splash">
+
+        <div class="loader">
+
+            <div class="spinner"></div>
+
+            <div class="logo-frame">
+                <img src="Images/Selon-logo-removebg-preview.webp" class="logo-img" alt="SELON Logo">
+            </div>
+        </div>
+        <p class="loading-text">SELON</p>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand fw-semibold fs-4" href="index.html">
+                S E L O N
+            </a>
+
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto gap-lg-4">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/allhoddies.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shop-bycategory">
+                            Collections
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Icons -->
+                <div class="nav-icons d-flex align-items-center gap-4">
+
+                    <div class="search-wrapper">
+                        <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                        <a href="#" class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+                        <div class="search-results" id="searchResults"></div>
+                    </div>
+
+
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">SHOPPING CART</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <div id="taskcontainer"></div>
+        </div>
+
+    </div>
+    <section class="hero" id="home">
+
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+
+                <div class="col-lg-5">
+
+                    <div class="hero-content " data-aos="fade-right" data-aos-delay="800">
+
+                        <h1>
+                            Code in <span>Comfort.</span>
+                            <br>
+                            Live in <span>Hoodies.</span>
+                        </h1>
+
+                        <p>
+                            Minimal hoodies for the focused and the fearless.
+                            <br>
+                            Built for developers, designed for everyday.
+                        </p>
+
+                        <div class="hero-buttons d-flex gap-3">
+
+                            <a href="pages/allhoddies.html" class="btn btn-dark hero-btn">
+                                Shop Now
+                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                            </a>
+
+                            <a href="#shop-bycategory" class="btn btn-outline-dark hero-btn">
+                                Explore Collection
+                            </a>
+
+                        </div>
+                        <div class="hero-badges mt-4">
+                            <span>
+                                <i class="fa-solid fa-earth-africa"></i>
+                                Designed in Egypt
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-shield-halved"></i>
+                                Premium Quality
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code"></i>
+                                Built for Everyday
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="moving-bar">
+
+        <div class="moving-track">
+
+            <div class="moving-content">
+                <span>CODE</span>
+                <span>•</span>
+                <span>CREATE</span>
+                <span>•</span>
+                <span>REPEAT</span>
+                <span>•</span>
+                <span>BUILD</span>
+                <span>•</span>
+                <span>DEBUG</span>
+                <span>•</span>
+                <span>DEPLOY</span>
+                <span>•</span>
+            </div>
+
+            <div class="moving-content">
+                <span>CODE</span>
+                <span>•</span>
+                <span>CREATE</span>
+                <span>•</span>
+                <span>REPEAT</span>
+                <span>•</span>
+                <span>BUILD</span>
+                <span>•</span>
+                <span>DEBUG</span>
+                <span>•</span>
+                <span>DEPLOY</span>
+                <span>•</span>
+            </div>
+            <div class="moving-content">
+                <span>CODE</span>
+                <span>•</span>
+                <span>CREATE</span>
+                <span>•</span>
+                <span>REPEAT</span>
+                <span>•</span>
+                <span>BUILD</span>
+                <span>•</span>
+                <span>DEBUG</span>
+                <span>•</span>
+                <span>DEPLOY</span>
+                <span>•</span>
+            </div>
+            <div class="moving-content">
+                <span>CODE</span>
+                <span>•</span>
+                <span>CREATE</span>
+                <span>•</span>
+                <span>REPEAT</span>
+                <span>•</span>
+                <span>BUILD</span>
+                <span>•</span>
+                <span>DEBUG</span>
+                <span>•</span>
+                <span>DEPLOY</span>
+                <span>•</span>
+            </div>
+        </div>
+
+    </section>
+    <section class="section-top py-4 mt-3" id="shop-bycategory">
+        <div class="container">
+            <div class="row">
+                <h2 data-aos="fade-up">Shop By Category <i class="fa-solid fa-arrow-right ms-2"></i>
+                </h2>
+                <div class="col-lg-3 col-md-6 mt-4 mb-5">
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card h-100 w-100">
+                            <img src="Images/Hoodies-card.webp" class="card-img-top" alt="Ctrl Z Hoodie">
+                            <div class="card-body">
+                                <h2 class="fw-bold">Hoodies</h2>
+                                <span class="">The Complete series</span>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="fw-bold"></h4>
+                                    <a href="pages/allhoddies.html" class="text-decoration-none">
+                                        View Our Hoodies
+                                        <i class="fa-solid fa-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 mb-5">
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 w-100">
+                            <img src="Images/Pants-card.webp" class="card-img-top" alt="Ctrl Z Hoodie">
+                            <div class="card-body">
+                                <h2 class=" fw-bold">Sweetbants</h2>
+                                <span>The Complete Series</span>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="fw-bold"></h4>
+                                    <a href="pages/sweetbants.html" class="text-decoration-none">
+                                        View Our Sweetbants
+                                        <i class="fa-solid fa-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mb-5">
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="card h-100 w-100">
+                            <img src="Images/rounded-card.webp" class="card-img-top" alt="Ctrl Z Hoodie">
+                            <div class="card-body">
+                                <h2 class=" fw-bold">Rounded</h2>
+                                <span>The Complete Series</span>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="fw-bold"></h4>
+                                    <a href="pages/rounded.html" class="text-decoration-none">
+                                        View Our Rounded
+                                        <i class="fa-solid fa-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mb-5">
+                    <div class="category-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="card h-100 w-100">
+                            <img src="Images/Cargo-cards.webp" class="card-img-top" alt="Ctrl Z Hoodie">
+                            <div class="card-body">
+                                <h2 class=" fw-bold">Cargo Shorts</h2>
+                                <span>The Complete Series</span>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="fw-bold"></h4>
+                                    <a href="pages/cargoshorts.html" class="text-decoration-none">
+                                        View Our Shorts
+                                        <i class="fa-solid fa-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categories section-top py-4 mt-3" data-aos="fade-up">
+        <div class="container">
+
+            <div class="best-seller-header">
+                <h2>
+                    Our Best Seller
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                </h2>
+            </div>
+
+            <div class="best-seller-carousel">
+
+                <!-- Left Arrow -->
+                <button class="best-seller-arrow" id="bestSellerPrev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+
+                <!-- Cards -->
+                <div class="best-seller-wrapper pt-3 pb-4">
+                    <div class="best-seller-track" id="bestSellerTrack">
+
+                        <!-- Card 1 -->
+                        <div class="best-seller-card">
+                            <div class="category-card">
+                                <div class="card h-100 w-100">
+                                    <img src="Images/fuel-for-builders-brown.webp" class="card-img-top"
+                                        alt="Brown Hoodie">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fuel for builders - Brown</h5>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fw-bold mb-0">EGP 899</h6>
+
+                                            <a href="pages/fuelforbuilders-brown.html" class="text-decoration-none">
+                                                View Product
+                                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Card 2 -->
+                        <div class="best-seller-card">
+                            <div class="category-card">
+                                <div class="card h-100 w-100">
+                                    <img src="Images/ctrlz-olive.webp" class="card-img-top" alt="Build Hoodie">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ctrl Z - Olive</h5>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fw-bold mb-0">EGP 899</h6>
+
+                                            <a href="pages/ctrlz-olive.html" class="text-decoration-none">
+                                                View Product
+                                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Card 3 -->
+                        <div class="best-seller-card">
+                            <div class="category-card">
+                                <div class="card h-100 w-100">
+                                    <img src="Images/thatsit-navi.webp" class="card-img-top" alt="Ctrl Z Hoodie">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">That's it - Navi</h5>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fw-bold mb-0">EGP 899</h6>
+
+                                            <a href="pages/thatsit-navi.html" class="text-decoration-none">
+                                                View Product
+                                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Card 4 -->
+                        <div class="best-seller-card">
+                            <div class="category-card">
+                                <div class="card h-100 w-100">
+                                    <img src="Images/fuelforbuilders-black.webp" class="card-img-top"
+                                        alt="Fuel for builders Black">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fuel for builders - Black</h5>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fw-bold mb-0">EGP 899</h6>
+
+                                            <a href="pages/Fuelforbuilders-black.html" class="text-decoration-none">
+                                                View Product
+                                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Card 5 -->
+                        <div class="best-seller-card">
+                            <div class="category-card">
+                                <div class="card h-100 w-100">
+                                    <img src="Images/ctrlz-blue.webp" class="card-img-top" alt="New Hoodie">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ctrl Z - Blue</h5>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="fw-bold mb-0">EGP 899</h6>
+
+                                            <a href="pages/ctrlz-blue.html" class="text-decoration-none">
+                                                View Product
+                                                <i class="fa-solid fa-arrow-right ms-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Right Arrow -->
+                <button class="best-seller-arrow" id="bestSellerNext">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="py-5 why-section section-bottom">
+
+        <div class="container mb-5">
+
+            <div class="text-center">
+
+                <h2 class="display-3 fw-semibold" data-aos="fade-up">
+                    Wear What <span>You Build</span>.
+                </h2>
+
+                <p class="lead text-secondary mx-auto" data-aos="fade-up">
+                    Minimal apparel designed for developers, creators, and everyone building the future.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-4" data-aos="fade-up">
+
+                    <div class="card border-0 rounded-5 text-center h-100 p-4 shadow-sm">
+
+                        <div class="icon-circle mx-auto mb-3">
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
+
+                        <h3 class="fw-semibold fs-2">
+                            Built for Builders
+                        </h3>
+
+                        <p class="text-secondary mb-0">
+                            Designed for developers, creators, and everyone who builds.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4" data-aos="fade-up">
+
+                    <div class="card border-0 rounded-5 text-center h-100 p-4 shadow-sm">
+
+                        <div class="icon-circle mx-auto mb-3">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+
+                        <h3 class="fw-semibold fs-2">
+                            Comfort First
+                        </h3>
+
+                        <p class="text-secondary mb-0">
+                            Soft fabrics that keep you comfortable through long coding sessions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4" data-aos="fade-up">
+
+                    <div class="card border-0 rounded-5 text-center h-100 p-4 shadow-sm">
+
+                        <div class="icon-circle mx-auto mb-3">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+
+                        <h3 class="fw-semibold fs-2">
+                            Clean & Minimal
+                        </h3>
+
+                        <p class="text-secondary mb-0">
+                            Simple designs inspired by code, creativity, and everyday wear.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="container my-5 py-5">
+
+        <div class="row align-items-center g-5">
+
+            <!-- Left Side -->
+            <div class="col-lg-5 questions " data-aos="fade-right">
+
+                <span class="badge rounded-pill text-dark bg-light px-3 py-2 fs-6 mb-3">
+                    Need Help?
+                </span>
+
+                <h2 class="display-2 fw-bold lh-1 mb-4">
+                    Before You <br> <span>checkout</span>
+                </h2>
+
+                <p class="text-secondary fs-5">
+                    Everything you need to know about sizing, shipping,
+                    payments, and returns before placing your order.
+                </p>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="col-lg-7">
+
+                <div class="accordion accordion-flush" id="faq" data-aos="fade-left">
+
+                    <div class="accordion-item rounded-4 overflow-hidden mb-3 border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold fs-5 py-4" data-bs-toggle="collapse"
+                                data-bs-target="#one">
+
+                                How do I choose my size?
+
+                            </button>
+                        </h2>
+
+                        <div id="one" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                            <div class="accordion-body text-secondary">
+                                Check our size guide to find the perfect fit for you.
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item rounded-4 overflow-hidden mb-3 border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold fs-5 py-4" data-bs-toggle="collapse"
+                                data-bs-target="#two">
+
+                                Are SELON hoodies oversized?
+
+                            </button>
+                        </h2>
+
+                        <div id="two" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                            <div class="accordion-body text-secondary">
+                                Yes. They are designed with a relaxed oversized fit.
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item rounded-4 overflow-hidden mb-3 border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold fs-5 py-4" data-bs-toggle="collapse"
+                                data-bs-target="#three">
+
+                                How long does delivery take?
+
+                            </button>
+                        </h2>
+
+                        <div id="three" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                            <div class="accordion-body text-secondary">
+                                Delivery usually takes 2–5 business days.
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item rounded-4 overflow-hidden border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-semibold fs-5 py-4" data-bs-toggle="collapse"
+                                data-bs-target="#four">
+
+                                Can I exchange my order?
+
+                            </button>
+                        </h2>
+
+                        <div id="four" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                            <div class="accordion-body text-secondary">
+                                Yes, exchanges are available within 14 days.
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="border-top bg-foot py-4 mt-5" id="footer">
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h4 class="fw-bold m-0">S E L O N</h4>
+                </div>
+
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+
+                    <a href="pages/allhoddies.html" class="text-dark text-decoration-none mx-2">Shop</a>
+
+                    <a href="#" class="text-dark text-decoration-none mx-2">About</a>
+
+                    <a href="#footer" class="text-dark text-decoration-none mx-2">Contact</a>
+
+                </div>
+
+                <div class="col-md-4 text-center text-md-end">
+
+                    <a href="https://www.instagram.com/selon.eg?igsi=ajBoNTrZ241bjEx" class="text-dark me-3">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/share/1DbDQd2e8f/" class="text-dark me-3">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://wa.me/201128844504" class="text-dark">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="text-center text-secondary small mb-0">
+                © 2026 S E L O N. Built for developers.
+            </p>
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
+    <script src="carousel.js"></script>
+    <script src="splash.js"></script>
+    <script src="nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

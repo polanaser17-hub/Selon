@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S E L O N</title>
+    <link rel="icon" href="../Images/Selon-logo.webp" type="image/jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../Style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand fw-semibold fs-4" href="index.html">
+                S E L O N
+            </a>
+
+
+            <!-- Mobile Button -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto gap-lg-4">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="allhoddies.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shop-bycategory">
+                            Collections
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- Icons -->
+                <div class="nav-icons d-flex align-items-center gap-4">
+
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+
+
+
+                    <a href="#">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas">
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">SHOPPING CART</h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+            </button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <div id="taskcontainer">
+
+            </div>
+
+        </div>
+
+    </div>
+    <main class="container py-5">
+        <div class="main">
+
+            <!-- Breadcrumb -->
+            <div class="mb-4" data-aos="fade-right">
+                <span>Home</span>
+                <span class="mx-2">›</span>
+                <span>Shop</span>
+                <span class="mx-2">›</span>
+                <span>Control Z Hoodie</span>
+            </div>
+
+
+            <div class="row g-5">
+
+                <!-- Left Side - Images -->
+                <div class="col-lg-6" data-aos="fade-right" >
+
+                    <!-- Main Image -->
+                    <div class="main-product-image rounded-4 mb-3">
+                        <img src="../Images/black-hoodie.webp" class="w-100" alt="Control Z Hoodie">
+                    </div>
+
+
+                    <!-- Thumbnails -->
+                    <div class="d-flex gap-3">
+
+                        <div class="thumbnail active">
+                            <img src="../Images/black-hoodie.webp" class="w-100" alt="">
+                        </div>
+
+                        <div class="thumbnail">
+                            <img src="../Images/black-logo.webp" class="w-100" alt="">
+                        </div>
+
+                        <div class="thumbnail">
+                            <img src="../Images/black-sleeve.webp" class="w-100" alt="">
+                        </div>
+
+                        <div class="thumbnail">
+                            <img src="../Images/black-backv.webp" class="w-100" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right Side - Product Details -->
+                <div class="col-lg-6" data-aos="fade-left" >
+
+                    <h1 class="fw-semibold display-5">
+                        Fuel for builders
+                    </h1>
+
+                    <h2 class="mt-4">
+                        899EGP
+                    </h2>
+
+                    <!-- Rating -->
+                    <div class="d-flex align-items-center gap-2 mt-3">
+                        <span>★★★★★</span>
+                        <span>4.9</span>
+                    </div>
+
+
+                    <!-- Description -->
+                    <p class="text-muted mt-4">
+                        Our signature, ultra-soft hoodie designed for focused work.
+                        Featuring subtly embroidered code on premium cotton.
+                        Built for developers, designed for every day.
+                    </p>
+                    <!-- Color -->
+                    <div class="product-option mt-4">
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="option-title">
+                                COLOR: <span id="selectedColor">Black</span>
+                            </span>
+                        </div>
+
+                        <div class="d-flex gap-3">
+
+                            <button class="color-option active" data-color="Black"
+                                style="background-color:  black;"></button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Size -->
+                    <div class="product-option mt-4">
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+
+                            <span class="option-title">
+                                SIZE: <span id="selectedSize">M</span>
+                                <span class="text-secondary fw-normal">(Oversized fit)</span>
+                            </span>
+
+                            <a href="#" class="size-guide">
+                                Size Guide
+                            </a>
+                        </div>
+
+
+                        <div class="d-flex gap-2 flex-wrap">
+
+                            <button class="size-option">S</button>
+
+                            <button class="size-option active">M</button>
+
+                            <button class="size-option">L</button>
+
+                            <button class="size-option">XL</button>
+
+                            <button class="size-option">XXL</button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Quantity -->
+                    <div class="product-option mt-4">
+
+                        <span class="option-title d-block mb-3">
+                            QUANTITY
+                        </span>
+
+
+                        <div class="quantity-box">
+
+                            <button class="quantity-btn" id="minusBtn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+
+                            <span id="quantity">1</span>
+
+                            <button class="quantity-btn" id="plusBtn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Add To Cart -->
+                    <button class="add-cart-btn mt-3" id="btnadd" data-id="4" data-bs-toggle="offcanvas"
+                        data-bs-target="#cartCanvas">
+                        Add to Cart
+                        <i class="fa-solid fa-bag-shopping ms-2"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="../sizeguide.js" ></script>
+    <script src="../cart.js"></script>
+    <script src="../nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
