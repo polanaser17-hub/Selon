@@ -1661,6 +1661,16 @@ img {
         white-space: nowrap;
     }
 
+    .hero .hero-buttons .btn-outline-dark,
+    .hero .hero-buttons .btn-outline-dark:hover,
+    .hero .hero-buttons .btn-outline-dark:focus,
+    .hero .hero-buttons .btn-outline-dark:active {
+        background-color: #212529;
+        border-color: #212529;
+        color: #fff;
+        box-shadow: none;
+    }
+
     .hero .hero-buttons .hero-btn i {
         font-size: 12px;
     }
