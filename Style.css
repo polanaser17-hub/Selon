@@ -1326,16 +1326,6 @@ h5.section-title {
 
 
 
-/* =====================================================
-   RESPONSIVE - ضيف الكود ده في آخر Style.css
-===================================================== */
-
-/* =====================================================
-   FIX: منع السكرول الأفقي على الموبايل
-   الأسباب: أنيميشن AOS (fade-right / fade-left) + الـ row بـ g-5 جوه container
-   + الـ offcanvas بره الشاشة. الحل: نقفل الـ overflow-x على html و body
-   (الاتنين مع بعض عشان الموبايل) ونقص أي حاجة طالعة برا الأقسام.
-===================================================== */
 html,
 body {
     max-width: 100%;
@@ -1596,6 +1586,9 @@ img {
    SMALL MOBILE (<= 575px)
 ========================= */
 @media (max-width: 575.98px) {
+    .hero-badges {
+        display: none;
+    }
 
     .container {
         padding-left: 18px;
@@ -1608,18 +1601,53 @@ img {
 
     .hero {
         min-height: 92vh;
+        padding-top: 76px;
+    }
+
+    .hero .row {
+        align-items: flex-start !important;
+    }
+
+    .hero-content {
+        max-width: 250px;
+        padding-top: 0;
+        padding-bottom: 32px;
     }
 
     .hero h1 {
         font-size: 32px;
+        line-height: 1.1;
+        letter-spacing: -1px;
+        margin-bottom: 16px;
+    }
+
+    .hero p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 24px;
     }
 
     .hero-buttons {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 11px !important;
     }
 
-    .hero-buttons .btn {
-        width: 100%;
+    .hero .hero-buttons .hero-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 36px;
+        padding: 0 16px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .hero .hero-buttons .hero-btn i {
+        font-size: 12px;
     }
 
     .section-top h2,

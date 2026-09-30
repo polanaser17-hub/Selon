@@ -5,7 +5,7 @@ const successOverlay = document.querySelector("#orderSuccessOverlay");
 const closeSuccessBtn = document.querySelector("#closeSuccessOverlay");
 
 closeSuccessBtn.addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "/index.html";
 });
 
 completeOrder.addEventListener("click", async function () {
@@ -87,6 +87,3 @@ completeOrder.addEventListener("click", async function () {
     }
 });
 
-
-
-// https://script.google.com/macros/s/AKfycbxFU6aomYTNvGsLpGoWE5LHxRK-KWDp0d7fxwO3J_OL13VJRemk4UJ1LN4NarWWI2ia/exec
