@@ -3,32 +3,32 @@ const searchProducts = [
     {
         name: "Fuel for builders - Brown",
         price: 899,
-        image: "../Images/fuel-for-builders-brown.webp",
-        link: "fuelforbuilders-brown.html"
+        image: "Images/fuel-for-builders-brown.webp",
+        link: "pages/fuelforbuilders-brown.html"
     },
     {
         name: "Ctrl Z - Olive",
         price: 899,
-        image: "../Images/ctrlz-olive.webp",
-        link: "ctrlz-olive.html"
+        image: "Images/ctrlz-olive.webp",
+        link: "pages/ctrlz-olive.html"
     },
     {
         name: "That's it - Navi",
         price: 899,
-        image: "../Images/thatsit-navi.webp",
-        link: "thatsit-navi.html"
+        image: "Images/thatsit-navi.webp",
+        link: "pages/thatsit-navi.html"
     },
     {
         name: "Fuel for builders - Black",
         price: 899,
-        image: "../Images/fuelforbuilders-black.webp",
-        link: "Fuelforbuilders-black.html"
+        image: "Images/fuelforbuilders-black.webp",
+        link: "pages/Fuelforbuilders-black.html"
     },
     {
         name: "Ctrl Z - Blue",
         price: 899,
-        image: "../Images/ctrlz-blue.webp",
-        link: "ctrlz-blue.html"
+        image: "Images/ctrlz-blue.webp",
+        link: "pages/ctrlz-blue.html"
     },
 ];
 
