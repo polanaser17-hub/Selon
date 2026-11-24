@@ -1,34 +1,22 @@
 // بيانات المنتجات الخاصة بالسيرش بس - مفصولة تماماً عن كارت.js
 const searchProducts = [
     {
-        name: "Fuel for builders - Brown",
-        price: 899,
-        image: "Images/fuel-for-builders-brown.webp",
+        name: "Fuel for builders - Beige",
+        price: 730,
+        image: "Images/Fuelfordevelopers-hoodie.png",
         link: "pages/fuelforbuilders-brown.html"
     },
     {
-        name: "Ctrl Z - Olive",
-        price: 899,
-        image: "Images/ctrlz-olive.webp",
+        name: "That's it - Green",
+        price: 730,
+        image: "Images/Thats it. Hoodie green.png",
         link: "pages/ctrlz-olive.html"
     },
     {
-        name: "That's it - Navi",
-        price: 899,
-        image: "Images/thatsit-navi.webp",
+        name: "Ctrl Z - Dark Grey",
+        price: 730,
+        image: "Images/CntlZ Hoodie.png",
         link: "pages/thatsit-navi.html"
-    },
-    {
-        name: "Fuel for builders - Black",
-        price: 899,
-        image: "Images/fuelforbuilders-black.webp",
-        link: "pages/Fuelforbuilders-black.html"
-    },
-    {
-        name: "Ctrl Z - Blue",
-        price: 899,
-        image: "Images/ctrlz-blue.webp",
-        link: "pages/ctrlz-blue.html"
     },
 ];
 

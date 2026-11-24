@@ -14,35 +14,23 @@ function loaddata() {
 let products = [
     {
         id: 1,
-        name: "Fuel for builders - Brown",
-        price: 899,
-        image: "../Images/fuel-for-builders-brown.webp"
+        name: "Fuel for builders - Beige",
+        price: 730,
+        image: "../Images/Fuelfordevelopers-hoodie.png"
     },
 
     {
         id: 2,
-        name: "Ctrl Z - Olive",
-        price: 899,
-        image: "../Images/ctrlz-olive.webp"
+        name: "Ctrl Z - Dark Grey",
+        price: 730,
+        image: "../Images/Thats it. Hoodie green.png"
     },
 
     {
         id: 3,
-        name: "That's it - Navi",
-        price: 899,
-        image: "../Images/thatsit-navi.webp"
-    },
-    {
-        id: 4,
-        name: "Fuel for builder - black",
-        price: 899,
-        image: "../Images/fuelforbuilders-black.webp"
-    },
-    {
-        id: 5,
-        name: "Ctrl Z Hoodie - Blue",
-        price: 899,
-        image: "../Images/ctrlz-blue.webp"
+        name: "That's it - Green",
+        price: 730,
+        image: "../Images/CntlZ Hoodie.png"
     },
 ];
 

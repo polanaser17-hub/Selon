@@ -1,4 +1,4 @@
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw_7xlYadAo_G83FBdMQj_8Hwi8i2IGHgbFjvsXlj9UUv2t1b15-vCFrsuxtB6Q9oAWgw/exec";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxEcGv2lGcBwHoBKxBCJB5EWcWyCQFrb8GnRsWhiBP2uBV90_VZ_TUXdJMh5cEhD_TPAw/exec";
 
 const completeOrder = document.querySelector("#completeOrder");
 const successOverlay = document.querySelector("#orderSuccessOverlay");
